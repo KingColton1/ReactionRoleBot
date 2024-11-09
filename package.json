@@ -20,6 +20,7 @@
     "minimist": "^1.2.6",
     "multimap": "^1.1.0",
     "node-cache": "^5.1.2",
+    "reactionrolebot": "file:",
     "sqlite3": "^5.0.0",
     "ts-node": "^10.9.1"
   },
