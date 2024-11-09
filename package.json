@@ -22,13 +22,14 @@
     "node-cache": "^5.1.2",
     "reactionrolebot": "file:",
     "sqlite3": "^5.0.0",
-    "ts-node": "^10.9.1"
+    "ts-node": "^10.9.1",
+    "tsx": "^4.19.2"
   },
   "scripts": {
-    "start": "NODE_ENV=prod npx ts-node src/main.ts",
-    "dev": "npx ts-node --logError src/main.ts dev-config.json",
+    "start": "NODE_ENV=prod npx tsx src/main.ts",
+    "dev": "npx tsx --logError src/main.ts dev-config.json",
     "knex": "npx knex --knexfile src/knexfile.js",
-    "register": "npx ts-node node_modules/discord-command-registry/src/register.ts src/commands.ts",
+    "register": "npx tsx node_modules/discord-command-registry/src/register.ts src/commands.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
